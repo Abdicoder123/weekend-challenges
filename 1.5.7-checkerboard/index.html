@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                display:flex;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+	<body>
+	
+	<script>
+	//setting the height, width of the squares in the checkerboard
+	// var width = getWidth()/7;
+	var isBlack = true;
+	
+	    for(var i = 0; i < 49; i++){
+	        
+            //Setting the width and length
+            var width = "14.28%";
+            var height = "60px";
+	        //Creating the square divs here
+	        var divs = document.createElement('divs');
+            console.log(divs);
+	        
+	        //If variable is black it will make the color black
+	        if(isBlack == true){
+	            divs.setAttribute("style", "background-color: black; width:"+ width +"; height:" + height+";");
+                isBlack = false;
+	        }
+	
+	        //If variable is red it will make the color red
+	        else{
+                divs.setAttribute("style", "background-color: red; width:"+ width +"; height:" + height+";");
+                isBlack = true;
+            }
+            
+            //Appending the divss to the screen
+            document.body.appendChild(divs);
+	    }
+	</script>
+	</body>
+</html>
