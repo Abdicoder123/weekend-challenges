@@ -1,0 +1,100 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* Heading styling */
+.container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Input styling */
+#location {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+#location:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button styling */
+#search {
+    background-color: #60e0a9;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#search:hover {
+    background-color: #287d49;
+}
+
+/* Weather info & error message styling */
+#weather-info, #error-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Weather information text */
+#weather-info p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Error message styling */
+#error-message {
+    color: red;
+    font-size: 16px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    #search {
+        font-size: 14px;
+    }
+
+    #location {
+        font-size: 14px;
+    }
+}
